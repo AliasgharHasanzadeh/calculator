@@ -10,5 +10,6 @@
 ```
 npm install
 ```
-![image](![image](https://github.com/user-attachments/assets/e212c7c8-146e-478c-a70d-62d6f53e23b6))
+![image](https://github.com/user-attachments/assets/353a3869-1349-4c35-8985-15dba8e9935c)
+
 
