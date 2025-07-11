@@ -41,38 +41,11 @@ btns.forEach((btn)=>{
         io.innerText = io.innerText.substring(0,length-1)
     }
     else if(btn.value =='='){
-        if(op =='+') {
-            const nums = io.innerHTML.split('+')
-            console.log(nums);
-            const res = Number(nums[0]) + Number(nums[1])
-            console.log(res);
-            io.innerText = res
-            op = ''
-        }else if(op =='-') {
-            const nums = io.innerHTML.split('-')
-            console.log(nums);
-            const res = Number(nums[0]) - Number(nums[1])
-            console.log(res);
-            io.innerText = res
-            op = ''
-        }else if(op =='*') {
-            const nums = io.innerHTML.split('*')
-            console.log(nums);
-            const res = Number(nums[0]) * Number(nums[1])
-            console.log(res);
-            io.innerText = res
-            op = ''
-        }else if(op =='/') {
-            const nums = io.innerHTML.split('÷')
-            console.log(nums);
-            const res = Number(nums[0]) / Number(nums[1])
-            console.log(res);
-            io.innerText = res
-            op = ''
-        }
-        else{
-
-        }
+        let calculate=io.innerHTML
+        calculate = calculate.replace('÷','/')
+        let evalResult = eval(calculate)
+        console.log('eval:',evalResult)
+        io.innerHTML = evalResult
     }
    })
 })
